@@ -16,14 +16,49 @@
 		B8A0AF6D258B7A160021BAA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8A0AF6B258B7A160021BAA4 /* Main.storyboard */; };
 		B8A0AF6F258B7A180021BAA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8A0AF6E258B7A180021BAA4 /* Assets.xcassets */; };
 		B8A0AF72258B7A180021BAA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8A0AF70258B7A180021BAA4 /* LaunchScreen.storyboard */; };
+		B8E8B750258C2C7A00681D9D /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E8B74F258C2C7A00681D9D /* WidgetKit.framework */; };
+		B8E8B752258C2C7A00681D9D /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E8B751258C2C7A00681D9D /* SwiftUI.framework */; };
+		B8E8B755258C2C7A00681D9D /* WaterWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E8B754258C2C7A00681D9D /* WaterWidget.swift */; };
+		B8E8B757258C2C7D00681D9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8E8B756258C2C7D00681D9D /* Assets.xcassets */; };
+		B8E8B75B258C2C7D00681D9D /* WaterWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B8E8B74E258C2C7A00681D9D /* WaterWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B8E8B762258C2FBA00681D9D /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84549CF258BDFF8001773C6 /* RealmHelper.swift */; };
+		B8E8B772258C328E00681D9D /* DayEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84549D4258BE7D1001773C6 /* DayEntry.swift */; };
+		EA9BA4C76438E189078047E3 /* Pods_AppWithWidget_WaterWidgetExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8A70C33461A4D9412BB9DB7 /* Pods_AppWithWidget_WaterWidgetExtension.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B8E8B759258C2C7D00681D9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B8A0AF5A258B7A160021BAA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8E8B74D258C2C7A00681D9D;
+			remoteInfo = WaterWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B8E8B75C258C2C7D00681D9D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B8E8B75B258C2C7D00681D9D /* WaterWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		11AB39219343A05CCD51FF64 /* Pods_AppWithWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppWithWidget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28440479DB3577747C085B18 /* Pods-AppWithWidget-WaterWidgetExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppWithWidget-WaterWidgetExtension.release.xcconfig"; path = "Target Support Files/Pods-AppWithWidget-WaterWidgetExtension/Pods-AppWithWidget-WaterWidgetExtension.release.xcconfig"; sourceTree = "<group>"; };
+		5C4DF1D7A381DF900F3F399D /* Pods-AppWithWidget-WaterWidgetExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppWithWidget-WaterWidgetExtension.debug.xcconfig"; path = "Target Support Files/Pods-AppWithWidget-WaterWidgetExtension/Pods-AppWithWidget-WaterWidgetExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		8FAAC568BAC6348C60BAC35A /* Pods-AppWithWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppWithWidget.release.xcconfig"; path = "Target Support Files/Pods-AppWithWidget/Pods-AppWithWidget.release.xcconfig"; sourceTree = "<group>"; };
 		AEF02B022682905D664E081F /* Pods-AppWithWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppWithWidget.debug.xcconfig"; path = "Target Support Files/Pods-AppWithWidget/Pods-AppWithWidget.debug.xcconfig"; sourceTree = "<group>"; };
 		B84549CF258BDFF8001773C6 /* RealmHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
 		B84549D4258BE7D1001773C6 /* DayEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayEntry.swift; sourceTree = "<group>"; };
+		B85240B7258CE6F3007087CA /* AppWithWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppWithWidget.entitlements; sourceTree = "<group>"; };
 		B8A0AF62258B7A160021BAA4 /* AppWithWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppWithWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8A0AF65258B7A160021BAA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8A0AF67258B7A160021BAA4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +67,15 @@
 		B8A0AF6E258B7A180021BAA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8A0AF71258B7A180021BAA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8A0AF73258B7A180021BAA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8A70C33461A4D9412BB9DB7 /* Pods_AppWithWidget_WaterWidgetExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppWithWidget_WaterWidgetExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8E8B74E258C2C7A00681D9D /* WaterWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WaterWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8E8B74F258C2C7A00681D9D /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		B8E8B751258C2C7A00681D9D /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		B8E8B754258C2C7A00681D9D /* WaterWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterWidget.swift; sourceTree = "<group>"; };
+		B8E8B756258C2C7D00681D9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B8E8B758258C2C7D00681D9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8E8B765258C30B900681D9D /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8E8B775258C359B00681D9D /* WaterWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WaterWidgetExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,13 +87,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B8E8B74B258C2C7A00681D9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8E8B752258C2C7A00681D9D /* SwiftUI.framework in Frameworks */,
+				B8E8B750258C2C7A00681D9D /* WidgetKit.framework in Frameworks */,
+				EA9BA4C76438E189078047E3 /* Pods_AppWithWidget_WaterWidgetExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		8D9C777DA6A9AF7325B588B2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B8E8B765258C30B900681D9D /* RealmSwift.framework */,
 				11AB39219343A05CCD51FF64 /* Pods_AppWithWidget.framework */,
+				B8E8B74F258C2C7A00681D9D /* WidgetKit.framework */,
+				B8E8B751258C2C7A00681D9D /* SwiftUI.framework */,
+				B8A70C33461A4D9412BB9DB7 /* Pods_AppWithWidget_WaterWidgetExtension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -73,7 +131,9 @@
 		B8A0AF59258B7A160021BAA4 = {
 			isa = PBXGroup;
 			children = (
+				B8E8B775258C359B00681D9D /* WaterWidgetExtension.entitlements */,
 				B8A0AF64258B7A160021BAA4 /* AppWithWidget */,
+				B8E8B753258C2C7A00681D9D /* WaterWidget */,
 				B8A0AF63258B7A160021BAA4 /* Products */,
 				EC7328CB7EFC429FBCFC35EB /* Pods */,
 				8D9C777DA6A9AF7325B588B2 /* Frameworks */,
@@ -84,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				B8A0AF62258B7A160021BAA4 /* AppWithWidget.app */,
+				B8E8B74E258C2C7A00681D9D /* WaterWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,6 +152,7 @@
 		B8A0AF64258B7A160021BAA4 /* AppWithWidget */ = {
 			isa = PBXGroup;
 			children = (
+				B85240B7258CE6F3007087CA /* AppWithWidget.entitlements */,
 				B84549D3258BE06C001773C6 /* Model */,
 				B84549D2258BE067001773C6 /* Database */,
 				B8A0AF65258B7A160021BAA4 /* AppDelegate.swift */,
@@ -104,11 +166,23 @@
 			path = AppWithWidget;
 			sourceTree = "<group>";
 		};
+		B8E8B753258C2C7A00681D9D /* WaterWidget */ = {
+			isa = PBXGroup;
+			children = (
+				B8E8B754258C2C7A00681D9D /* WaterWidget.swift */,
+				B8E8B756258C2C7D00681D9D /* Assets.xcassets */,
+				B8E8B758258C2C7D00681D9D /* Info.plist */,
+			);
+			path = WaterWidget;
+			sourceTree = "<group>";
+		};
 		EC7328CB7EFC429FBCFC35EB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				AEF02B022682905D664E081F /* Pods-AppWithWidget.debug.xcconfig */,
 				8FAAC568BAC6348C60BAC35A /* Pods-AppWithWidget.release.xcconfig */,
+				5C4DF1D7A381DF900F3F399D /* Pods-AppWithWidget-WaterWidgetExtension.debug.xcconfig */,
+				28440479DB3577747C085B18 /* Pods-AppWithWidget-WaterWidgetExtension.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -125,15 +199,35 @@
 				B8A0AF5F258B7A160021BAA4 /* Frameworks */,
 				B8A0AF60258B7A160021BAA4 /* Resources */,
 				08537A2BF46ED08448DBCEA4 /* [CP] Embed Pods Frameworks */,
+				B8E8B75C258C2C7D00681D9D /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B8E8B75A258C2C7D00681D9D /* PBXTargetDependency */,
 			);
 			name = AppWithWidget;
 			productName = AppWithWidget;
 			productReference = B8A0AF62258B7A160021BAA4 /* AppWithWidget.app */;
 			productType = "com.apple.product-type.application";
+		};
+		B8E8B74D258C2C7A00681D9D /* WaterWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8E8B75F258C2C7D00681D9D /* Build configuration list for PBXNativeTarget "WaterWidgetExtension" */;
+			buildPhases = (
+				C393E0E91486933609DA8A9B /* [CP] Check Pods Manifest.lock */,
+				B8E8B74A258C2C7A00681D9D /* Sources */,
+				B8E8B74B258C2C7A00681D9D /* Frameworks */,
+				B8E8B74C258C2C7A00681D9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WaterWidgetExtension;
+			productName = WaterWidgetExtension;
+			productReference = B8E8B74E258C2C7A00681D9D /* WaterWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -145,6 +239,9 @@
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					B8A0AF61258B7A160021BAA4 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					B8E8B74D258C2C7A00681D9D = {
 						CreatedOnToolsVersion = 12.3;
 					};
 				};
@@ -163,6 +260,7 @@
 			projectRoot = "";
 			targets = (
 				B8A0AF61258B7A160021BAA4 /* AppWithWidget */,
+				B8E8B74D258C2C7A00681D9D /* WaterWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -175,6 +273,14 @@
 				B8A0AF72258B7A180021BAA4 /* LaunchScreen.storyboard in Resources */,
 				B8A0AF6F258B7A180021BAA4 /* Assets.xcassets in Resources */,
 				B8A0AF6D258B7A160021BAA4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8E8B74C258C2C7A00681D9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8E8B757258C2C7D00681D9D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +302,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppWithWidget/Pods-AppWithWidget-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C393E0E91486933609DA8A9B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppWithWidget-WaterWidgetExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DC6FCE7CBAD18B66181110C7 /* [CP] Check Pods Manifest.lock */ = {
@@ -235,7 +363,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B8E8B74A258C2C7A00681D9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8E8B772258C328E00681D9D /* DayEntry.swift in Sources */,
+				B8E8B755258C2C7A00681D9D /* WaterWidget.swift in Sources */,
+				B8E8B762258C2FBA00681D9D /* RealmHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B8E8B75A258C2C7D00681D9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B8E8B74D258C2C7A00681D9D /* WaterWidgetExtension */;
+			targetProxy = B8E8B759258C2C7D00681D9D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B8A0AF6B258B7A160021BAA4 /* Main.storyboard */ = {
@@ -377,8 +523,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AEF02B022682905D664E081F /* Pods-AppWithWidget.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AppWithWidget/AppWithWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ATS36AY4LN;
 				INFOPLIST_FILE = AppWithWidget/Info.plist;
@@ -397,8 +545,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8FAAC568BAC6348C60BAC35A /* Pods-AppWithWidget.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AppWithWidget/AppWithWidget.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ATS36AY4LN;
 				INFOPLIST_FILE = AppWithWidget/Info.plist;
@@ -408,6 +558,52 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dragonborn.AppWithWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B8E8B75D258C2C7D00681D9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C4DF1D7A381DF900F3F399D /* Pods-AppWithWidget-WaterWidgetExtension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = WaterWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ATS36AY4LN;
+				INFOPLIST_FILE = WaterWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dragonborn.AppWithWidget.WaterWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B8E8B75E258C2C7D00681D9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28440479DB3577747C085B18 /* Pods-AppWithWidget-WaterWidgetExtension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = WaterWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ATS36AY4LN;
+				INFOPLIST_FILE = WaterWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dragonborn.AppWithWidget.WaterWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -430,6 +626,15 @@
 			buildConfigurations = (
 				B8A0AF77258B7A180021BAA4 /* Debug */,
 				B8A0AF78258B7A180021BAA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8E8B75F258C2C7D00681D9D /* Build configuration list for PBXNativeTarget "WaterWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8E8B75D258C2C7D00681D9D /* Debug */,
+				B8E8B75E258C2C7D00681D9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

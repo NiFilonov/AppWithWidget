@@ -7,7 +7,6 @@
 
 import Foundation
 import RealmSwift
-import WidgetKit
 
 // RealmHelper - класс, через который мы работаем
 // с базой данных Realm
@@ -19,43 +18,11 @@ class RealmHelper {
     private let dailyRate: Int = 2000
     
     init() {
-        // берем FileManager, который позволяет управлять файлами
-        let fileManager = FileManager.default
-        // создаем путь для файла default.realm
-        // путь создается до общей папки (AppGroup)
-        let appGroupURL = FileManager.default
-            .containerURL(forSecurityApplicationGroupIdentifier: "group.water.contents")!
-            .appendingPathComponent("default.realm")
-        // проверяем доступен ли файл по этому пути
-        if !fileManager.fileExists(atPath: appGroupURL.path) {
-            // если в общей папке этот файл не найдет,
-            // то начинаем оперцию переноса файла базы
-            // данных Realm в общую папку
-
-            // получаем текущее расположение файла default.realm
-            let originalPath = Realm.Configuration.defaultConfiguration.fileURL!
-            do{
-                // если файл не был ранее перенесен это означает
-                // что мы запускаем приложение в первый раз,
-                // поэтому создаем нашу базу данных
-                // создастся она в своей папке, внутри контейнера приложения
-                let testRealm = try! Realm()
-                // используя fileManager переносим нашу базу данных
-                // в общую папку
-                try _ = fileManager.replaceItemAt(appGroupURL, withItemAt: originalPath)
-            }
-            catch{
-                print("Error info: \(error)")
-            }
-        }
-        
-        realm = try! Realm(fileURL: appGroupURL)
-        
+        // создаем базу данных и присваиваем в
+        // переменную realm
+        realm = try! Realm()
         // производим настройку базы данных
         configureRealm()
-        
-        // выводим путь к файлу базы данных
-        print(realm.configuration.fileURL?.absoluteString ?? "error")
     }
     
     // функция, которая добавляет введенное пользователем
@@ -81,10 +48,6 @@ class RealmHelper {
                 }
             }
         }
-        
-        // Обновляем значения виджета после каждого изменения
-        // в базе данных
-        WidgetCenter.shared.reloadAllTimelines()
     }
     
     // функция, которая достает из базы данных значение
